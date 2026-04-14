@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RespiCare</title>
+  <link rel="icon" href="respicare (2).png" type="image/png"> 
+  <link rel="stylesheet" href="respicare_details.css">
+
+  <style>
+    body {
+      background-color: #4e4e4e;
+      margin: 0;
+      font-family: 'Georgia', serif;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    header h1 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 24px;
+      font-family: 'Georgia', serif;
+    }
+
+    header h1 img {
+      width: 40px;
+      height: 40px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: inherit;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      font-family: 'Georgia', serif;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    main {
+      padding: 40px;
+      background-color: #2e2e2e;
+    }
+
+    section {
+      font-family: 'Georgia', serif;
+      margin-bottom: 40px;
+      display: none; 
+    }
+
+    section h2 {
+      font-family: 'Georgia', serif;
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #005f73;
+      text-align: center;
+    }
+
+    section p {
+      font-family: 'Georgia', serif;
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: justify;
+      background-color: var(--bg-color);
+      color: var(--text-color); 
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+
+    body.light-mode {
+      --bg-color: #f2ebeb;
+      --text-color: #333;
+    }
+
+    body.dark-mode {
+      --bg-color: #333;
+      --text-color: #eee8e8;
+    }
+
+
+    .theme-toggle {
+      cursor: pointer;
+      font-size: 18px;
+      background: none;
+      border: none;
+      color: #d4d4d4;
+      transition: transform 0.3s ease;
+    }
+
+    .theme-toggle:hover {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body class="dark-mode">
+  <header>
+    <h1>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/lungs.png" alt="Lungs Icon">
+      RespiCare
+    </h1>
+    <nav>
+      <a href="javascript:void(0)" onclick="showSection('home')">Home</a>
+      <a href="javascript:void(0)" onclick="showSection('respiratory-parts')">Respiratory </a>
+      <a href="javascript:void(0)" onclick="showSection('lung-health')">Lung Health</a>
+      <a href="javascript:void(0)" onclick="showSection('breathing-techniques')">Breathing Techniques</a>
+      <a href="Catherine.html" class="home-button">Main Page</a>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button>🔍</button>
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()">🌞</button>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1 style="margin-top: 1px;">
+        <span style="--i: 0">W</span>
+        <span style="--i: 1">h</span>
+        <span style="--i: 2">a</span>
+        <span style="--i: 3">t</span>
+        <span style="--i: 4"> </span>
+        <span style="--i: 5">i</span>
+        <span style="--i: 6">s</span>
+        <span style="--i: 7"> </span>
+        <span style="--i: 8">R</span>
+        <span style="--i: 9">e</span>
+        <span style="--i: 10">s</span>
+        <span style="--i: 11">p</span>
+        <span style="--i: 12">i</span>
+        <span style="--i: 13">r</span>
+        <span style="--i: 14">a</span>
+        <span style="--i: 15">t</span>
+        <span style="--i: 16">o</span>
+        <span style="--i: 17">r</span>
+        <span style="--i: 18">y</span>
+        <span style="--i: 19"> </span>
+        <span style="--i: 20">S</span>
+        <span style="--i: 21">y</span>
+        <span style="--i: 22">s</span>
+        <span style="--i: 23">t</span>
+        <span style="--i: 24">e</span>
+        <span style="--i: 25">m</span>
+        <span style="--i: 26">?</span>
+      </h1>
+      <p>The respiratory system is a group of organs and tissues that work together to facilitate the exchange of gases, primarily oxygen and carbon dioxide, between the body and the environment. It includes key structures such as the nose, trachea, lungs, and diaphragm. Air enters the body through the nose or mouth and travels down the trachea, which branches into the bronchi that lead into each lung. Inside the lungs, the bronchi branch into smaller bronchioles, which end in tiny air sacs called alveoli. The alveoli are where gas exchange takes place: oxygen from the inhaled air moves into the bloodstream, while carbon dioxide, a waste product, is transferred from the blood to be exhaled.</p>
+
+      <p>What is the main function of your respiratory system?</p>
+      <p>The main function of your respiratory system is to pull in oxygen for your body’s cells and get rid of carbon dioxide, a waste product. You do this by breathing in and out and through gas exchange between the small air sacs of your lungs (alveoli) and the blood vessels running nearby. Your respiratory system also:</p>
+        
+       <p>• Warms and adds moisture to the air you breathe in. Your respiratory system warms the air to match your body temperature. It moisturizes the air to bring it to the humidity level your body needs.</p>
+       <p>• Protects your body from particles you breathe in. Parts of your respiratory system can block harmful germs and irritants from getting in — or push them out if they do get in.</p>
+       <p>• Allows you to talk. Air vibrates your vocal cords, which makes sounds.</p>
+       <p>• Helps you smell. Breathing in air moves its molecules past your olfactory nerve, which sends messages to your brain about the way something smells.</p>
+       <p>• Balances level of acidity in your body. Too much carbon dioxide lowers your blood’s pH, making it acidic. By removing carbon dioxide, your respiratory system helps maintain the acid-base balance in your body.</p>
+       <p><a href="https://my.clevelandclinic.org/health/body/21205-respiratory-system" style="color: #87CEEB;">https://my.clevelandclinic.org/health/body/21205-respiratory-system</a></p>
+    </section>
+
+    <section id="respiratory-parts">
+      <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="styles.css">
+        </head> 
+      <body>
+        <h1 style="margin-top: 1px;">
+          <span style="--i: 0">I</span>
+          <span style="--i: 1">n</span>
+          <span style="--i: 2">t</span>
+          <span style="--i: 3">e</span>
+          <span style="--i: 4">r</span>
+          <span style="--i: 5">a</span>
+          <span style="--i: 6">c</span>
+          <span style="--i: 7">t</span>
+          <span style="--i: 8">i</span>
+          <span style="--i: 9">v</span>
+          <span style="--i: 10">e</span>
+          <span style="--i: 11"> </span>
+          <span style="--i: 12">R</span>
+          <span style="--i: 13">e</span>
+          <span style="--i: 14">s</span>
+          <span style="--i: 15">p</span>
+          <span style="--i: 16">i</span>
+          <span style="--i: 17">r</span>
+          <span style="--i: 18">a</span>
+          <span style="--i: 19">t</span>
+          <span style="--i: 20">o</span>
+          <span style="--i: 21">r</span>
+          <span style="--i: 22">y</span>
+          <span style="--i: 23"> </span>
+          <span style="--i: 24">S</span>
+          <span style="--i: 25">y</span>
+          <span style="--i: 26">s</span>
+          <span style="--i: 27">t</span>
+          <span style="--i: 28">e</span>
+          <span style="--i: 29">m</span>
+          <span style="--i: 30"> </span>
+          <span style="--i: 31">D</span>
+          <span style="--i: 32">i</span>
+          <span style="--i: 33">a</span>
+          <span style="--i: 34">g</span>
+          <span style="--i: 35">r</span>
+          <span style="--i: 36">a</span>
+          <span style="--i: 37">m</span>
+        </h1>
+        <p style="text-align: center;">Click on the parts of the respiratory system to learn more!</p>
+      
+        <div class="container">
+          <img src="respicare (1).png" alt="Respiratory System" id="diagram">
+          <button class="hotspot-btn" style="top: 5%; left: 5%;" onclick="showFunction('respiratory system')">The Respiratory System</button>
+          <button class="hotspot-btn" style="top: 5%; left: 38%;" onclick="showFunction('nasal cavity')">Nasal Cavity</button>
+          <button class="hotspot-btn" style="top: 12%; left: 38%;" onclick="showFunction('oral cavity')">Oral Cavity</button>
+          <button class="hotspot-btn" style="top: 22%; left: 38%;" onclick="showFunction('pharynx')">Pharynx</button>
+          <button class="hotspot-btn" style="top: 29%; left: 38%;" onclick="showFunction('larynx')">Larynx</button>
+          <button class="hotspot-btn" style="top: 37%; left: 38%;" onclick="showFunction('trachea')">Trachea</button>
+          <button class="hotspot-btn" style="top: 55%; left: 39%;" onclick="showFunction('bronchi')">Bronchi</button>
+          <button class="hotspot-btn" style="top: 26%; left: 64%;" onclick="showFunction('pulmonary veins')">Pulmonary Veins</button>
+          <button class="hotspot-btn" style="top: 55%; left: 64%;" onclick="showFunction('pulmonary arteries')">Pulmonary Arteries</button>
+          <button class="hotspot-btn" style="top: 57%; left: 5%;" onclick="showFunction('lungs')">Lungs</button>
+          <button class="hotspot-btn" style="top: 63%; left: 5%;" onclick="showFunction('rib cage')">Rib Cage</button>
+          <button class="hotspot-btn" style="top: 81%; left: 20%;" onclick="showFunction('right lobe')">Right Lung</button>
+          <button class="hotspot-btn" style="top: 78%; left: 86%;" onclick="showFunction('left lobe')">Left Lung</button>
+          <button class="hotspot-btn" style="top: 69%; left: 39%;" onclick="showFunction('bronchioles')">Bronchioles</button>
+          <button class="hotspot-btn" style="top: 72%; left: 39%;" onclick="showFunction('alveoli')">Alveoli</button>
+          <button class="hotspot-btn" style="top: 84%; left: 38%;" onclick="showFunction('diaphragm')">Diaphragm</button>
+        </div>
+          <p style="text-align: center;">Source of information: <a href="https://www.innerbody.com/anatomy/respiratory" style="color: #87CEEB;">Inner Body</a></p>
+          <p style="text-align: center;"><a href="https://my.clevelandclinic.org/" style="color: #87CEEB;">Cleveland Clinic</a></p>
+          <p style="text-align: center;"><a href="https://sketchfab.com/3d-models/respirator-system-anatomy-e167afeba10a4711a8d6b0b59358cc44" style="color: #87CEEB;">Sketchfab</a></p>
+          <p style="text-align: center;">For a brief overview of the respiratory system, check out this video: <a href="https://www.youtube.com/watch?v=v_j-LD2YEqg" style="color: #87CEEB;">Respiratory System</a></p>
+      
+        <script src="respicare_details.js"></script>
+      </body>
+      </html> 
+    </section>
+
+    <section id="lung-health">
+      <h1 style="margin-top: 1px;">
+        <span style="--i: 0">L</span>
+        <span style="--i: 1">u</span>
+        <span style="--i: 2">n</span>
+        <span style="--i: 3">g</span>
+        <span style="--i: 4"> </span>
+        <span style="--i: 5">H</span>
+        <span style="--i: 6">e</span>
+        <span style="--i: 7">a</span>
+        <span style="--i: 8">l</span>
+        <span style="--i: 9">t</span>
+        <span style="--i: 10">h</span>
+      </h1>
+      <p>Lung health is essential for overall well-being, as the lungs are responsible for oxygenating the body and removing carbon dioxide. Maintaining healthy lungs ensures efficient respiration and helps prevent respiratory diseases. Here’s key information on lung health:</p>
+        
+      <p> 1. Importance of Lung Health  </p>
+      <p> - Oxygen Exchange: The lungs take in oxygen and expel carbon dioxide, facilitating the exchange of gases vital for survival.</p>  
+      <p> - Respiratory Efficiency: Healthy lungs ensure that oxygen is effectively transferred to the bloodstream, supporting the body's energy needs.</p>  
+      <p> - Protection Against Diseases: Good lung health helps defend against respiratory infections and chronic conditions such as asthma, COPD (Chronic Obstructive Pulmonary Disease), and lung cancer.</p>
+      
+      <p> 2. Common Respiratory Conditions</p>  
+      <p> - Asthma: A chronic condition where the airways become inflamed and narrowed, leading to difficulty breathing.</p>  
+      <p> - OPD (Chronic Obstructive Pulmonary Disease): A group of lung diseases (like emphysema and chronic bronchitis) that cause obstructed airflow from the lungs.</p>  
+      <p> - Lung Cancer: The uncontrolled growth of abnormal cells in the lungs, often linked to smoking or prolonged exposure to harmful substances.</p>  
+      <p> - Bronchitis: Inflammation of the bronchial tubes, causing coughing and mucus production.</p>
+        
+      <p> 3. Lifestyle Factors Affecting Lung Health</p> 
+      <p> - Smoking: The leading cause of lung disease, including cancer and COPD. Quitting smoking is critical for lung health.</p>  
+      <p> - Air Pollution: Exposure to pollutants like dust, chemicals, and smoke harms lung tissue and reduces respiratory function.</p>  
+      <p> - Healthy Diet and Exercise: Maintaining a balanced diet rich in fruits and vegetables supports lung health. Regular physical activity improves lung capacity and overall respiratory efficiency.</p>  
+      <p> - Exposure to Toxins: Avoiding exposure to harmful substances (e.g., asbestos, second-hand smoke) helps protect lung function.</p>
+      
+      <p> 4. Protective Measures for Lung Health</p>  
+      <p> - Breathing Exercises Techniques like deep breathing, yoga, and diaphragmatic breathing improve lung function and oxygen exchange.</p>  
+      <p> - Vaccinations Regular flu and pneumonia vaccines help prevent infections that can harm lung health.</p>  
+      <p> - Healthy Environment: Ensuring a clean, smoke-free environment reduces risks of lung disease.</p>  
+      <p> - Regular Health Check-Ups: Monitoring lung function through tests like spirometry can help detect issues early.</p>
+        
+      <p> 5. Symptoms of Lung Problems </p> 
+      <p> - Persistent cough  </p>
+      <p> - Shortness of breath  </p>
+      <p> - Wheezing  </p>
+      <p> - Chest pain or tightness </p> 
+      <p> - Excess mucus production  </p>
+      <p> - Fatigue or weakness  </p>
+        
+      <p>Maintaining good lung health is vital for overall health, and early detection of respiratory conditions through regular check-ups can lead to better management and improved quality of life.</p>
+      <p><a href="https://www.lung.org/lung-health-diseases/wellness/protecting-your-lungs" style="color: #87CEEB;">https://www.lung.org/lung-health-diseases/wellness/protecting-your-lungs</a></p>
+    </section>
+
+    <section id="breathing-techniques">
+      <h1 style="margin-top: 1px;">
+        <span style="--i: 0">B</span>
+        <span style="--i: 1">r</span>
+        <span style="--i: 2">e</span>
+        <span style="--i: 3">a</span>
+        <span style="--i: 4">t</span>
+        <span style="--i: 5">h</span>
+        <span style="--i: 6">i</span>
+        <span style="--i: 7">n</span>
+        <span style="--i: 8">g</span>
+        <span style="--i: 9"> </span>
+        <span style="--i: 10">T</span>
+        <span style="--i: 11">e</span>
+        <span style="--i: 12">c</span>
+        <span style="--i: 13">h</span>
+        <span style="--i: 14">n</span>
+        <span style="--i: 15">i</span>
+        <span style="--i: 16">q</span>
+        <span style="--i: 17">u</span>
+        <span style="--i: 18">e</span>
+        <span style="--i: 19">s</span>
+      </h1>
+      <p>Breathing Techniques for Lung Health and Relaxation</p>
+      <p>Breathing techniques can improve lung function, reduce stress, and enhance oxygenation, contributing to overall well-being. These techniques help strengthen respiratory muscles, increase lung capacity, and promote better control over your breathing.</p>
+      <p>Diaphragmatic Breathing (Belly Breathing)</p>
+      <p>How to do it:</p>
+      <p>1. Sit or lie down comfortably</p>
+      <p>2. Place one hand on your chest and the other on your belly.</p>
+      <p>3. Inhale deeply through your nose so that your belly rises (not your chest).</p>
+      <p>4. Exhale slowly through your mouth while your belly falls.</p>
+      <p>Benefits: Reduces stress, improves oxygen exchange, and enhances relaxation.</p>
+      <p><a href="https://www.lung.org/lung-health-diseases/wellness/breathing-exercises#:~:text=Belly%20Breathing%2C%20aka%20Diaphragmic%20Breathing&text=Breathe%20out%20through%20your%20mouth,fill%20and%20empty%20your%20lungs."style="color: #87CEEB;">Lung.org Breathing Exercise</a></p>
+    </section>
+  </main>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('main section');
+      sections.forEach(section => {
+        section.style.display = 'none';
+      });
+
+      const selectedSection = document.getElementById(sectionId);
+      if (selectedSection) {
+        selectedSection.style.display = 'block';
+      }
+    }
+
+    function toggleTheme() {
+  const body = document.body;
+  const currentTheme = body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
+  body.classList.toggle('dark-mode');
+  body.classList.toggle('light-mode');
+  document.querySelector('.theme-toggle').textContent = currentTheme === 'dark-mode' ? '🌞' : '🌙';
+
+  const sectionPs = document.querySelectorAll('section p');
+  sectionPs.forEach((p) => {
+    if (currentTheme === 'dark-mode') {
+      p.style.backgroundColor = '#f2ebeb'; 
+    } else {
+      p.style.backgroundColor = '#333'; 
+    }
+  });
+}
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+      showSection('home');
+    });
+  </script>
+</body>
+</html>

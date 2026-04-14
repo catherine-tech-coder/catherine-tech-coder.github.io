@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cthrn</title>
+    <link rel="stylesheet" href="catherine.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header>
+        <h1>cthrn.</h1>
+        <nav>
+            <a href="javascript:void(0)" onclick="scrollToSection('home')">Home</a>
+            <a href="javascript:void(0)" onclick="scrollToSection('about_me')">About Me</a>
+            <a href="javascript:void(0)" onclick="scrollToSection('projects')">Projects</a>
+            <a href="javascript:void(0)" onclick="scrollToSection('contact')">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home_image_container">
+            <img src="circle2.png" class="image_back animate__animated animate__slideInDown">
+            <img src="2x2.png" class="image_front animate__animated animate__slideInUp">
+            <img src="left_flower.png" class="lflower animate__animated animate__slideInLeft">
+            <img src="right_flower.png" class="rflower animate__animated animate__slideInRight">
+        </div>
+            <p class="intro_name">Hello, <br>I'm</p>
+            <p class="intro_name_2"><span class="name"></span></p>
+            <p class="intro_text">In here, you can check out what I am currently working on.</p>
+        <div class="section_divider"></div>
+    </section>
+
+
+    <section id="about_me">
+        <h1>About Me</h1>
+        <p>I'm currently a college student studying Computer Science at Our Lady of Fatima University-Laguna. <br>
+        Some of the programming languages I know are Java, Python, C, SQL, and PHP.</p>
+        <div class="section_divider"></div>
+    </section>
+
+
+    <section id="projects">
+        <h1>My Projects</h1>
+        <p>Here are some of the projects I’ve worked on...</p>
+
+        <div class="project_image_container">
+            <div class="project-img">
+                <img src="medipals.png">
+                <a href="medipals_details.html" class="project-name">MediPals</a>
+                <div class="project-description">A medication reminder and tracking app for the elderly.</div>
+            </div>
+            <div class="project-img">
+                <img src="respicare.png">
+                <a href="respicare_details.html" class="project-name">RespiCare</a>
+                <div class="project-description">An interactive website to explore the respiratory system.</div>
+            </div>
+            <div class="project-img">
+                <img src="mathematiks.png">
+                <a href="MatheMatiks.html" class="project-name">MatheMatiks</a>
+                <div class="project-description">A combat-based math game to make learning fun and engaging. (COMING SOON)</div>
+            </div>
+    
+            <div class="project-img single-project">
+                <img src="arduino.jpg">
+                <a href="Automated Garage Door with Ultrasonic Sensor.pdf" target="_blank" class="project-name">Automated Garage Door</a>
+                <div class="project-description">My Solo Arduino Project with Ultrasonic Sensor</div>
+            </div>
+            <div class="project-img single-project">
+                <img src="Homeworks.png">
+                <a href="https://drive.google.com/drive/folders/1EcqGhvSpf-EN4sidGyLQqN-l878wNVZS" target="_blank" class="project-name">Homeworks</a>
+                <div class="project-description">all of my homeworks this semester compiled</div>
+            </div>
+        </div>        
+        
+        <div class="section_divider"></div>        
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Email: cscabbab2079lag@student.fatima.edu.ph</p>
+        <p>Mobile Number: 09273333614</p>
+        <p>Feel free to reach out to me!</p>
+        <div class="section_divider"></div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".name", {
+            strings: ["Catherine."],
+            typeSpeed: 200,
+            backSpeed: 200,
+            loop: true
+        })
+    </script>
+
+    <script src="catherine.js"></script>
+</body>
+</html>

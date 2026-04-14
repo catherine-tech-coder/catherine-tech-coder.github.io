@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cthrn Medipals Details</title>
+    <link rel="stylesheet" href="medipals_details.css">
+</head>
+<body>
+
+    <header>
+        <h1>cthrn.</h1>
+        <nav>
+            <a href="javascript:void(0)" onclick="scrollToSection('description')">Description</a>
+            <a href="javascript:void(0)" onclick="scrollToSection('details')">Details</a>
+            <a href="Catherine.html" class="home-button">Main Page</a>
+        </nav>
+    </header>
+
+    <section id="description">
+        <div class="container">
+
+            <div class="image-wrapper description-set visible" id="descriptionSet">
+                <img src="desclogo.png" alt="Logo 1" onclick="switchImages()">
+                <img src="desc.png" alt="Description">
+            </div>
+            <div class="image-wrapper objectives-set" id="objectivesSet">
+                <img src="objlogo.png" alt="Logo 2" onclick="switchImages()">
+                <img src="obj.png" alt="Objective">
+            </div>
+
+        </div>
+
+        <div class="section_divider"></div>
+    </section>
+
+    <section id="details">
+        <h1>MediPals User Interface</h1>
+        <p>Click on the buttons to see details.</p>
+
+        <div class="details_container">
+            <img src="medipals_details.png" class="details_img">
+        
+            <button class="button openInfo" style="top: 41.5%; left: 28%;" data-info="info1"></button>
+            <div id="info1" class="information">
+                <span class="closeInfo">&times;</span>
+                <h2>Alarm Notification</h2>
+                <p>A pop-up is used as a prompt for the alarm, with a button to turn it off.
+                Additionally, a ringtone plays, and the name of the medication to be taken at that specific time is displayed.</p>
+            </div>
+        
+            <button class="button openInfo" style="top: 73%; left: 34%;" data-info="info2"></button>
+            <div id="info2" class="information">
+                <span class="closeInfo">&times;</span>
+                <h2>Database</h2>
+                <p>After the alarm is either turned off or missed (if not deactivated within one minute), 
+                the date and time, medication name, and whether the medication was taken or missed will be automatically recorded in the system database, 
+                and the history will be made available to the user. </p>
+            </div>
+
+            <button class="button openInfo" style="top: 20.5%; left: 71.5%;" data-info="info3"></button>
+            <div id="info3" class="information">
+                <span class="closeInfo">&times;</span>
+                <h2>Real-time Updates</h2>
+                <p>The system continuously updates and displays the current time and date on the main interface.
+                    Enhancing the user experience by making it easy to check the current time directly within the system.
+                </p>
+            </div>
+
+            <button class="button openInfo" style="top: 34.5%; left: 81%;" data-info="info4"></button>
+            <div id="info4" class="information">
+                <span class="closeInfo">&times;</span>
+                <h2>Medication Name</h2>
+                <p>A text field for the user to enter the medicine name they needed to take. This will be stored on the system database
+                    and will also be displayed on the alarm notification, reminding the user of what medicine they should take.
+                </p>
+            </div>
+
+            <button class="button openInfo" style="top: 45%; left: 81%;" data-info="info5"></button>
+            <div id="info5" class="information">
+                <span class="closeInfo">&times;</span>
+                <h2>Alarm</h2>
+                <p>The system uses combo boxes to get the input for the hour, minute and day of the week, making it more user-friendly for elderly users.
+                    <br>Instead of manually typing numbers, which can be challenging for those with limited dexterity or vision impairments, users can simply click and select their desired time from a predefined list. 
+                    This eliminates the risk of accidental input errors and ensures they set their medication reminders accurately. </p>
+            </div>
+
+            <button class="button openInfo" style="top: 59%; left: 81%;" data-info="info6"></button>
+            <div id="info6" class="information">
+                <span class="closeInfo">&times;</span>
+                <h2>Alarm Interval</h2>
+                <p>MediPals also give users an option to set a recurring alarm, when the medicine is required to be taken in interval (ex. every 8 hours).</p>
+            </div>
+
+            <button class="button openInfo" style="top: 67%; left: 83%;" data-info="info7"></button>
+            <div id="info7" class="information">
+                <span class="closeInfo">&times;</span>
+                <h2>Upcoming Alarm</h2>
+                <p>Displays upcoming alarm.</p>
+            </div>
+        </div>
+        
+        <div class="section_divider"></div>
+    </section>
+
+    <script src="medipals_details.js"></script>
+</body>
+</html>

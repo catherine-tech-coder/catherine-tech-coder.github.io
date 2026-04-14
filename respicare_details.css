@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  color: white;
+}
+
+header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #3f3f3f;
+      color: rgb(250, 230, 230);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  justify-content: center;
+  display: inline-block;
+  overflow: hidden;
+  color: white;
+  margin: 0;
+  font-size: 28px;
+}
+
+h1 span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: wave 1s ease-in-out forwards;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes wave {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  margin-top: 40px;
+  background-color: #333;
+  padding: 20px;
+  position: relative;
+}
+
+footer p {
+  color: #fff;
+  margin: 0;
+}
+
+footer a {
+  color: #87CEEB;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  margin: 20px auto;
+}
+
+img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+}
+
+.hotspot-btn {
+  position: absolute;
+  background-color: #dcd7d70e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hotspot-btn:hover {
+  background-color: #171616;
+  opacity: 1;
+  transform: scale(1.1);
+}
